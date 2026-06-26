@@ -1,33 +1,27 @@
+
+import Category from "./components/Category";
+import Hero from "./components/Hero";
+
+
+
+
+
 export default function Home(){
 
 
 return(
 
-<div className="
-min-h-screen
-flex
-items-center
-justify-center
-">
+<main className="max-w-375 mx-auto ">
 
 
-<h1 className="
-text-5xl
-font-bold
-text-techorange
-">
+<Hero></Hero>
 
 
-TechCity Home Page
+<Category></Category>
 
 
-</h1>
-
-
-</div>
-
+</main>
 
 )
-
 
 }

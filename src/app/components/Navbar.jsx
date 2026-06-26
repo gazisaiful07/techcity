@@ -31,7 +31,7 @@ export default function Navbar() {
     return (
 
         <nav className="bg-techdark border-b border-gray-800 sticky top-0 z-50  ">
-            <div className=" container h-20 flex items-center justify-between ml-30">
+            <div className=" container h-20 flex items-center justify-between max-w-375 mx-auto px-2">
                 {/* Logo */}
                 <div className="  text-3xl font-bold text-orange-500">
                     TechCity
