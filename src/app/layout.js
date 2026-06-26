@@ -1,26 +1,28 @@
+import Navbar from "./components/Navbar";
 import "./globals.css";
 
 
-export const metadata={
 
-title:"TechCity | Computer & Technology Store",
+export const metadata = {
 
-description:
-"Premium Computer Components and Tech Products"
+title:"TechCity",
+description:"Computer & Tech Store"
 
 };
 
 
 
-export default function RootLayout({children}){
+export default function RootLayout({children}) {
 
 
-return(
+return (
 
 <html lang="en">
 
-
 <body>
+
+
+<Navbar></Navbar>
 
 
 {children}
@@ -30,7 +32,6 @@ return(
 
 
 </html>
-
 
 )
 

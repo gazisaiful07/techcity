@@ -1,9 +1,9 @@
-export default function Home() {
+export default function Home(){
 
 
-  return (
+return(
 
-    <main className="
+<div className="
 min-h-screen
 flex
 items-center
@@ -11,13 +11,23 @@ justify-center
 ">
 
 
-      <h1 className=" text-5xl font-bold text-orange-500  ">
-        TechCity
-      </h1>
-    </main>
+<h1 className="
+text-5xl
+font-bold
+text-techorange
+">
 
 
-  )
+TechCity Home Page
+
+
+</h1>
+
+
+</div>
+
+
+)
 
 
 }
