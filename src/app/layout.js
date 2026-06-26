@@ -5,34 +5,35 @@ import "./globals.css";
 
 export const metadata = {
 
-title:"TechCity",
-description:"Computer & Tech Store"
+    title: "TechCity",
+    description: "Computer & Tech Store"
 
 };
 
 
 
-export default function RootLayout({children}) {
+export default function RootLayout({ children }) {
 
 
-return (
+    return (
 
-<html lang="en">
+        <html lang="en">
 
-<body>
-
-
-<Navbar></Navbar>
+            <body>
 
 
-{children}
+                <Navbar></Navbar>
 
 
-</body>
+
+                {children}
 
 
-</html>
+            </body>
 
-)
+
+        </html>
+
+    )
 
 }
