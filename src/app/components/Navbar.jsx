@@ -59,7 +59,7 @@ export default function Navbar() {
 
                             <div
 
-                                className=" absolute top-10 left-0 w-[650px] bg-dark- border border-gray-700 rounded-lg p-6 grid grid-cols-3 gap-4 shadow-xl "
+                                className=" absolute top-10 left-0 w-162.5 bg-dark- border border-gray-700 rounded-lg p-6 grid grid-cols-3 gap-4 shadow-xl "
 
                             >
                                 {
@@ -94,7 +94,7 @@ export default function Navbar() {
                 </div>
                 {/* Search */}
                 <div
-                    className=" hidden md:flex w-[350px] bg-white rounded overflow-hidden "
+                    className=" hidden md:flex w-162.5 bg-white rounded overflow-hidden  "
                 >
                     <input
                         type="text"
@@ -104,7 +104,7 @@ export default function Navbar() {
                         className=" flex-1 px-4 text-black outline-none "
                     />
                     <button
-                        className="bg-techorange px-5 "
+                        className="bg-techorange px-5 py-2"
                     >
                         <FontAwesomeIcon icon={faSearch} />
                     </button>
