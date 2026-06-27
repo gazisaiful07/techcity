@@ -7,6 +7,8 @@ import {
     faSearch, faShoppingCart, faUser, faBars, faTimes, faChevronDown
 } from "@fortawesome/free-solid-svg-icons";
 
+import { useCartStore } from "../../../store/cartStore";
+
 
 
 export default function Navbar() {
@@ -27,6 +29,21 @@ export default function Navbar() {
         "Networking"
 
     ];
+    const cart = useCartStore(
+
+        (state) => state.cart
+
+    );
+
+
+    const cartCount = cart.reduce(
+
+        (total, item) => total + item.quantity,
+
+        0
+
+    );
+
 
     return (
 
@@ -34,7 +51,7 @@ export default function Navbar() {
             <div className=" container h-20 flex items-center justify-between max-w-375 mx-auto px-2">
                 {/* Logo */}
                 <div className="  text-3xl font-bold text-orange-500">
-                    TechCity
+                    <a href="/">Tech<span className="text-white font-normal">City</span></a>
                 </div>
                 {/* Desktop Menu */}
 
@@ -124,21 +141,39 @@ export default function Navbar() {
                     </div>
                     {/* Cart */}
 
-                    <div
-                        className=" relative cursor-pointer hover:text-techorange "
-                    >
+                    <div className=" relative cursor-pointer hover:text-techorange ">
 
-                        <FontAwesomeIcon
-                            icon={faShoppingCart}
-                            size="lg"
-                        />
+                        <a href="/cart">
+
+
+                            <FontAwesomeIcon icon={faShoppingCart} />
+
+
+                        </a>
 
 
                         <span
 
-                            className=" absolute -top-3 -right-3 bg-techorange text-xs rounded-full w-5 h-5 flex items-center justify-center "
+                            className="
+absolute
+-top-3
+-right-3
+bg-techorange
+text-xs
+rounded-full
+w-5
+h-5
+flex
+items-center
+justify-center
+"
+
                         >
-                            0
+
+
+                            {cartCount}
+
+
                         </span>
                     </div>
                 </div>
